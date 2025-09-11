@@ -1,0 +1,214 @@
+/* Layout geral */
+.pagina-inicial {
+    min-height: 100vh;
+    background: #f8f3eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+  }
+  
+  /* Cabeçalho */
+  .cabecalho {
+    width: 100%;
+    max-width: 1200px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .logo h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  /* Barra de busca */
+  .barra-busca {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: #f2f2f2;
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+  }
+  
+  .barra-busca input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+  }
+  
+  .barra-busca button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  /* Ícones */
+  .icones button {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  
+  /* Seção principal */
+  .conteudo-principal {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  /* Texto */
+  .destaque-texto {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .destaque-texto h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .destaque-texto p {
+    color: #444;
+    line-height: 1.5;
+  }
+  
+  /* Imagem destaque */
+  .destaque-imagem {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .destaque-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .destaque-imagem figcaption {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Botões */
+  .navegacao {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .navegacao a {
+    background: #4a2c1a;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: background 0.3s;
+  }
+  
+  .navegacao a:hover {
+    background: #2f1c10;
+  }
+  
+  
+ 
+/* Seções informativas */
+.secao-informativa {
+  max-width: 800px;
+  margin: 6rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.secao-informativa h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #4a2c1a;
+}
+
+.secao-informativa p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+/* Apoio */
+.apoio {
+  text-align: center;
+  margin: 6rem auto 2rem auto;
+}
+
+.apoio h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #b5892f;
+}
+
+.logos-apoio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.logos-apoio img {
+  max-height: 60px;
+  object-fit: contain;
+}
+
+/* Galeria */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
