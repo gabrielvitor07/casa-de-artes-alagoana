@@ -1,0 +1,40 @@
+/* Apoio */
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-image: url('/maceioFooter.png');
+    width: 100%;
+    height: auto;
+    
+}
+.apoio {
+    text-align: center;
+  }
+  
+  .apoio h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #b5892f;
+  }
+  
+  .logos-apoio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+  }
+  
+  .logos-apoio img {
+    max-height: 60px;
+    object-fit: contain;
+   
+  }
+
+  .rodape{
+    text-align: center;
+  }

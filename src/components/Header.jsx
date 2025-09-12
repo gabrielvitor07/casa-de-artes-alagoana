@@ -1,5 +1,6 @@
 import "./Header.css";
 import { FiSearch, FiUser, FiShoppingCart } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -27,7 +28,8 @@ export default function Header() {
       {/* Ícones */}
       <nav className="icones">
         <button aria-label="Minha conta"><FiUser /></button>
-        <button aria-label="Carrinho de compras"><FiShoppingCart /></button>
+        <Link to="/carrinho"> <button aria-label="Carrinho de compras"><FiShoppingCart /></button></Link>
+       
       </nav>
     </header>
   );

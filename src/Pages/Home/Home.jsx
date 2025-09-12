@@ -1,5 +1,7 @@
 import "./Home.css";
 import Header from "../../Components/Header";
+import Footer from "../../components/Footer";
+
 
 export default function Home() {
   return (
@@ -61,29 +63,14 @@ export default function Home() {
           o artesanato, sempre com foco em sustentabilidade e comércio justo.
         </p>
       </section>
-      
-      {/* Apoio */}
-      <section className="apoio">
-        <h2>APOIO:</h2>
-        <div className="logos-apoio">
-          <img src="/maceio.png" alt="Prefeitura de Maceió" />
-          <img src="/ministerio-cultura.png" alt="Ministério da Cultura" />
-          <img src="/instituto-vale.png" alt="Instituto Cultural Vale" />
-          <img src="/alagoas.png" alt="Governo de Alagoas" />
-        </div>
-      </section>
 
       {/* Galeria de fotos */}
       <section className="galeria">
         <img src="/foto1.png" alt="foto1" />
         <img src="/foto2.png" alt="foto2" />
       </section>
-
-      {/* Rodapé */}
-      <footer className="rodape">
-        <p>&copy; {new Date().getFullYear()} Casa de Artes Alagoana. Todos os direitos reservados.</p>
-      </footer>
-
+      
+      <Footer />
     </main>
   );
 }
