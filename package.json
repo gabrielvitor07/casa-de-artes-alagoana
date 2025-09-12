@@ -31,5 +31,13 @@
   "main": "eslint.config.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielvitor07/casa-de-artes-alagoana.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gabrielvitor07/casa-de-artes-alagoana/issues"
+  },
+  "homepage": "https://github.com/gabrielvitor07/casa-de-artes-alagoana#readme"
 }
