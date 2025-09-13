@@ -4,8 +4,11 @@ import Footer from "../../components/Footer";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useCart } from "../../contexts/CartContext";
 
 export default function Produtos() {
+  const { addToCart } = useCart();
+  
   const produtos = [
     {
       id: 1,
@@ -63,7 +66,10 @@ export default function Produtos() {
                 <p className="parcelas">{produto.parcelas}</p>
                 <p className="pix">{produto.pix}</p>
               </div>
-              <button className="botao-comprar">
+              <button 
+                className="botao-comprar"
+                onClick={() => addToCart(produto)}
+              >
                 Adicionar ao Carrinho <FiShoppingCart />
               </button>
             </article>

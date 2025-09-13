@@ -1,8 +1,13 @@
 import "./Header.css";
 import { FiSearch, FiShoppingBag, FiShoppingCart } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { useCart } from '../contexts/CartContext';
 
 export default function Header() {
+  const { totalItems } = useCart();
+  const location = useLocation();
+  const isCartPage = location.pathname === '/carrinho';
+
   return (
     <header className="cabecalho">
       {/* Logo */}
@@ -30,8 +35,11 @@ export default function Header() {
         <Link to="/produtos" className="botao-icone" aria-label="Nossos produtos">
           <FiShoppingBag />
         </Link>
-        <Link to="/carrinho" className="botao-icone" aria-label="Carrinho de compras">
+        <Link to="/carrinho" className="botao-icone carrinho-icone" aria-label="Carrinho de compras">
           <FiShoppingCart />
+          {totalItems > 0 && !isCartPage && (
+            <span className="carrinho-badge">{totalItems}</span>
+          )}
         </Link>
        
       </nav>

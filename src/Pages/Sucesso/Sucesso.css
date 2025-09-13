@@ -1,0 +1,179 @@
+.sucesso {
+  background-color: #f9f6f1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo-sucesso {
+  padding: 8rem 2rem 2rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sucesso-container {
+  max-width: 600px;
+  width: 100%;
+}
+
+.sucesso-card {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.icone-sucesso {
+  font-size: 4rem;
+  color: #4caf50;
+  margin-bottom: 1.5rem;
+  animation: bounce 0.8s ease-out 0.3s both;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.sucesso-card h1 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.mensagem-sucesso {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.detalhes-pedido {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.detalhes-pedido h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.detalhes-pedido ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.detalhes-pedido li {
+  padding: 0.5rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.acoes-sucesso {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.botao-home,
+.botao-produtos {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.botao-home {
+  background: #8b6b3f;
+  color: white;
+}
+
+.botao-home:hover {
+  background: #6e522f;
+  transform: translateY(-2px);
+}
+
+.botao-produtos {
+  background: transparent;
+  color: #8b6b3f;
+  border: 2px solid #8b6b3f;
+}
+
+.botao-produtos:hover {
+  background: #8b6b3f;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.agradecimento {
+  border-top: 2px solid #e0e0e0;
+  padding-top: 1.5rem;
+  color: #666;
+}
+
+.agradecimento p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.agradecimento strong {
+  color: #8b6b3f;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .conteudo-sucesso {
+    padding: 8rem 1rem 2rem;
+  }
+  
+  .sucesso-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .sucesso-card h1 {
+    font-size: 1.5rem;
+  }
+  
+  .acoes-sucesso {
+    flex-direction: column;
+  }
+  
+  .botao-home,
+  .botao-produtos {
+    justify-content: center;
+  }
+}
