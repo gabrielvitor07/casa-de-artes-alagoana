@@ -20,29 +20,29 @@ export default function Carrinho() {
   // Produtos relacionados
   const produtosRelacionados = [
     {
-      id: 5,
+      id: 1,
       nome: "São Francisco Gordinho de Cerâmica Leonildo",
-      preco: "R$ 129,00",
-      parcelas: "2x de R$ 64,50",
-      pix: "R$ 122,55 no Pix",
-      imagem: "/produtos/produto1.jpg",
+      preco: "R$ 199,00",
+      parcelas: "3x de R$ 66,33",
+      pix: "R$ 189,00 no Pix",
+      imagem: "/produto-01.png",
     },
     {
-      id: 6,
+      id: 2,
       nome: "Cestaria Tradicional",
       preco: "R$ 129,00",
       parcelas: "2x de R$ 64,50",
       pix: "R$ 122,55 no Pix",
-      imagem: "/produtos/produto2.jpg",
+      imagem: "/produto-02.png",
     },
     {
-      id: 7,
+      id: 3,
       nome: "Pote Decorado Artesanal",
       preco: "R$ 129,00",
       parcelas: "2x de R$ 64,50",
       pix: "R$ 122,55 no Pix",
-      imagem: "/produtos/produto3.jpg",
-    }
+      imagem: "/produto-03.png",
+    },
   ];
 
   return (
